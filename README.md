@@ -1,7 +1,6 @@
 # caesar-salad
-Simple script to automatically solve a caesar cipher
-Prints to stdout
+Simple script to automatically solve a caesar cipher. Prints to stdout.
 
 # Usage:
-python caesarSalad.py [ciphertext]
-python caesarSalad.py ciphers.txt
+> python caesarSalad.py [ciphertext]
+> python caesarSalad.py ciphers.txt
