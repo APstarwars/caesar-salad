@@ -18,7 +18,7 @@ def dcode(ciphertext):
         possibilities = {}
         for shift in range(1, 26):
             output = ""
-            for char in ciphertext:
+            for char in cipher:
                 if char.isalpha():
                     if char.islower():
                         output += chr(((ord(char) + shift - 97) % 26) + 97)
