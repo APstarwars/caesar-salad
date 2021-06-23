@@ -26,13 +26,13 @@ def dcode(ciphertext):
                         output += chr(((ord(char) + shift - 65) % 26) + 65)
                 elif char != '\n':
                     output += char
-            output = ' ' + output + ' ' # add space padding to help word search
+            # output = ' ' + output + ' ' # add space padding to help word search
            
             # Checks for valid english words
             wordFile = open("engmix.txt", "r")
             wordcount = 0
             for word in wordFile:
-                if (output.lower().find(' ' + word.strip('\n') + ' ') != -1):
+                if (output.lower().find(word.strip('\n')) != -1):
                     wordcount += 1
             wordFile.close()
             if wordcount > 0:
